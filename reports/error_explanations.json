@@ -1,0 +1,512 @@
+[
+  {
+    "PassengerId": "7219_02",
+    "fold": 0,
+    "reproduced_oof_probability": 0.988938620234033,
+    "intercept": 0.05199782993222346,
+    "logit_sum": 4.493172526130695,
+    "contributions": [
+      {
+        "feature": "categorical__CabinDeck_C",
+        "transformed_value": 1.0,
+        "log_odds_contribution": 1.6895711142444005
+      },
+      {
+        "feature": "categorical__HomePlanet_Europa",
+        "transformed_value": 1.0,
+        "log_odds_contribution": 1.0931798387790153
+      },
+      {
+        "feature": "categorical__CryoSleep_True",
+        "transformed_value": 1.0,
+        "log_odds_contribution": 0.8042942761985318
+      },
+      {
+        "feature": "numeric__Spa",
+        "transformed_value": -0.26574516111820506,
+        "log_odds_contribution": 0.5566150529053475
+      },
+      {
+        "feature": "numeric__VRDeck",
+        "transformed_value": -0.26801050039944,
+        "log_odds_contribution": 0.5319738645029953
+      },
+      {
+        "feature": "numeric__RoomService",
+        "transformed_value": -0.324174566377358,
+        "log_odds_contribution": 0.32236976907305304
+      },
+      {
+        "feature": "categorical__CabinSide_P",
+        "transformed_value": 1.0,
+        "log_odds_contribution": -0.27218777167945896
+      },
+      {
+        "feature": "numeric__Age",
+        "transformed_value": -1.889262769239709,
+        "log_odds_contribution": 0.23302230257684714
+      },
+      {
+        "feature": "numeric__FoodCourt",
+        "transformed_value": -0.27469323802385764,
+        "log_odds_contribution": -0.20843696669687203
+      },
+      {
+        "feature": "categorical__Destination_TRAPPIST-1e",
+        "transformed_value": 1.0,
+        "log_odds_contribution": -0.19670048996223172
+      },
+      {
+        "feature": "numeric__ShoppingMall",
+        "transformed_value": -0.27495758935732495,
+        "log_odds_contribution": -0.08030057036268473
+      },
+      {
+        "feature": "categorical__VIP_False",
+        "transformed_value": 1.0,
+        "log_odds_contribution": -0.03222572338047231
+      },
+      {
+        "feature": "categorical__HomePlanet_Earth",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__HomePlanet_Mars",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__HomePlanet___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CryoSleep_False",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CryoSleep___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__Destination_55 Cancri e",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__Destination_PSO J318.5-22",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__Destination___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__VIP_True",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__VIP___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_A",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_B",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_D",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_E",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_F",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_G",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_T",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinDeck___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinSide_S",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__CabinSide___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      }
+    ],
+    "interpretation": "Это разложение прогноза модели, а не объяснение причины события."
+  },
+  {
+    "PassengerId": "1182_02",
+    "fold": 4,
+    "reproduced_oof_probability": 0.006696257474757449,
+    "intercept": -0.003534822025040072,
+    "logit_sum": -4.999487716510886,
+    "contributions": [
+      {
+        "feature": "numeric__RoomService",
+        "transformed_value": 4.16805076424489,
+        "log_odds_contribution": -4.0936895383503025
+      },
+      {
+        "feature": "categorical__CryoSleep_False",
+        "transformed_value": 1.0,
+        "log_odds_contribution": -0.6263950049364244
+      },
+      {
+        "feature": "categorical__CabinDeck_E",
+        "transformed_value": 1.0,
+        "log_odds_contribution": -0.604227759924619
+      },
+      {
+        "feature": "numeric__Spa",
+        "transformed_value": -0.26412133858654824,
+        "log_odds_contribution": 0.5789660980620575
+      },
+      {
+        "feature": "numeric__VRDeck",
+        "transformed_value": -0.2510702162887412,
+        "log_odds_contribution": 0.5034860925558323
+      },
+      {
+        "feature": "categorical__CabinSide_P",
+        "transformed_value": 1.0,
+        "log_odds_contribution": -0.25160258132710017
+      },
+      {
+        "feature": "numeric__FoodCourt",
+        "transformed_value": -0.2827483383025042,
+        "log_odds_contribution": -0.22457828741578678
+      },
+      {
+        "feature": "categorical__Destination_TRAPPIST-1e",
+        "transformed_value": 1.0,
+        "log_odds_contribution": -0.1581475074683942
+      },
+      {
+        "feature": "categorical__HomePlanet_Mars",
+        "transformed_value": 1.0,
+        "log_odds_contribution": -0.11406125282909467
+      },
+      {
+        "feature": "numeric__ShoppingMall",
+        "transformed_value": -0.28283207767044666,
+        "log_odds_contribution": -0.09336094930724485
+      },
+      {
+        "feature": "categorical__VIP_False",
+        "transformed_value": 1.0,
+        "log_odds_contribution": 0.05422032331008551
+      },
+      {
+        "feature": "numeric__Age",
+        "transformed_value": -0.35334514873627626,
+        "log_odds_contribution": 0.03343747314514602
+      },
+      {
+        "feature": "categorical__HomePlanet_Earth",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__HomePlanet_Europa",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__HomePlanet___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CryoSleep_True",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__CryoSleep___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__Destination_55 Cancri e",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__Destination_PSO J318.5-22",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__Destination___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__VIP_True",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__VIP___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_A",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_B",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_C",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_D",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_F",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_G",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_T",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinDeck___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinSide_S",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__CabinSide___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      }
+    ],
+    "interpretation": "Это разложение прогноза модели, а не объяснение причины события."
+  },
+  {
+    "PassengerId": "2822_02",
+    "fold": 4,
+    "reproduced_oof_probability": 0.6024696231682507,
+    "intercept": -0.003534822025040072,
+    "logit_sum": 0.41576589523871066,
+    "contributions": [
+      {
+        "feature": "categorical__HomePlanet_Earth",
+        "transformed_value": 1.0,
+        "log_odds_contribution": -0.7540431379101293
+      },
+      {
+        "feature": "numeric__Spa",
+        "transformed_value": -0.26412133858654824,
+        "log_odds_contribution": 0.5789660980620575
+      },
+      {
+        "feature": "numeric__VRDeck",
+        "transformed_value": -0.25728812660365846,
+        "log_odds_contribution": 0.5159552392933328
+      },
+      {
+        "feature": "categorical__CabinSide_S",
+        "transformed_value": 1.0,
+        "log_odds_contribution": 0.3542635431471955
+      },
+      {
+        "feature": "numeric__RoomService",
+        "transformed_value": -0.3280872758542451,
+        "log_odds_contribution": 0.32223394694514834
+      },
+      {
+        "feature": "categorical__CabinDeck_G",
+        "transformed_value": 1.0,
+        "log_odds_contribution": -0.28125221553358143
+      },
+      {
+        "feature": "numeric__FoodCourt",
+        "transformed_value": -0.2827483383025042,
+        "log_odds_contribution": -0.22457828741578678
+      },
+      {
+        "feature": "numeric__Age",
+        "transformed_value": -1.6951421258600328,
+        "log_odds_contribution": 0.16041332253568136
+      },
+      {
+        "feature": "categorical__Destination_TRAPPIST-1e",
+        "transformed_value": 1.0,
+        "log_odds_contribution": -0.1581475074683942
+      },
+      {
+        "feature": "categorical__VIP___MISSING__",
+        "transformed_value": 1.0,
+        "log_odds_contribution": 0.15388472226299868
+      },
+      {
+        "feature": "categorical__CryoSleep___MISSING__",
+        "transformed_value": 1.0,
+        "log_odds_contribution": -0.15337167028969517
+      },
+      {
+        "feature": "numeric__ShoppingMall",
+        "transformed_value": -0.287868191687579,
+        "log_odds_contribution": -0.09502333636507654
+      },
+      {
+        "feature": "categorical__HomePlanet_Europa",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__HomePlanet_Mars",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__HomePlanet___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CryoSleep_False",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CryoSleep_True",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__Destination_55 Cancri e",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__Destination_PSO J318.5-22",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__Destination___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__VIP_False",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__VIP_True",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_A",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_B",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_C",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_D",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_E",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_F",
+        "transformed_value": 0.0,
+        "log_odds_contribution": 0.0
+      },
+      {
+        "feature": "categorical__CabinDeck_T",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinDeck___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinSide_P",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      },
+      {
+        "feature": "categorical__CabinSide___MISSING__",
+        "transformed_value": 0.0,
+        "log_odds_contribution": -0.0
+      }
+    ],
+    "interpretation": "Это разложение прогноза модели, а не объяснение причины события."
+  }
+]

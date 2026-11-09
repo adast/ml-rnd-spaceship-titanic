@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "prediction_rows": 111488,
+  "maximum_probability_difference": 0.0,
+  "absolute_tolerance": 1e-09,
+  "holdout_evaluated": false,
+  "independent_metric_audit": {
+    "passed": true,
+    "folds_recomputed": 80,
+    "absolute_tolerance": 1e-10
+  }
+}
