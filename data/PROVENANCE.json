@@ -1,0 +1,25 @@
+{
+  "dataset": "Spaceship Titanic",
+  "original_creator": "Addison Howard, Ashley Chow, Ryan Holbrook / Kaggle (2022)",
+  "original_url": "https://www.kaggle.com/competitions/spaceship-titanic/data",
+  "original_license": "CC BY 4.0 (as listed by the official data page)",
+  "acquisition": "Public raw-CSV mirror; official competition API returned HTTP 401 in this session",
+  "mirror_repo": "Hugo0133/Spaceship-Titanic",
+  "mirror_revision": "dfc1e1d39a3193cfe99c53a51533b9ce04c71fb9",
+  "train_url": "https://huggingface.co/datasets/Hugo0133/Spaceship-Titanic/resolve/dfc1e1d39a3193cfe99c53a51533b9ce04c71fb9/train.csv",
+  "test_url": "https://huggingface.co/datasets/Hugo0133/Spaceship-Titanic/resolve/dfc1e1d39a3193cfe99c53a51533b9ce04c71fb9/test.csv",
+  "independent_train_mirror": "StevenSch12/spaceship-titanic-train",
+  "independent_revision": "c08a03c428fc2d8f50ef9898d8aef654946bfac9",
+  "verification": "Two independently hosted raw train files were byte-identical and matched their published Git blob SHA1 cbfd74d7a672da864c81934340b19c7994c0c8f2. Original Kaggle bytes were not fetched; no claim is made of checking against an official SHA256. Header and 8693-row schema match the competition description.",
+  "files": {
+    "train.csv": {
+      "bytes": 805421,
+      "sha256": "17336d553f49ebdf6ecb266d2b5d3746e5dd308445f7c7864141c4f28d2a88d0"
+    },
+    "test.csv": {
+      "bytes": 372487,
+      "sha256": "3c02b0703423d27d51a657a111b15a37b8d03b3c1de325e3a1e6b26f6572fc88"
+    }
+  },
+  "retrieved_at_utc": "2026-11-08T19:40:48.758302+00:00"
+}

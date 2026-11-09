@@ -1,0 +1,111 @@
+{
+  "checked_at_utc": "2026-11-09T20:30:13.099482+00:00",
+  "technical_package": "Код и тексты проверены; результаты исходного решения сохранены",
+  "tests": {
+    "command": ".venv/bin/python -m pytest -q",
+    "passed": 9,
+    "failed": 0,
+    "warnings": 0
+  },
+  "reproduction": {
+    "passed": true,
+    "prediction_rows": 111488,
+    "maximum_probability_difference": 0.0,
+    "absolute_tolerance": 1e-09,
+    "holdout_evaluated": false,
+    "independent_metric_audit": {
+      "passed": true,
+      "folds_recomputed": 80,
+      "absolute_tolerance": 1e-10
+    }
+  },
+  "markdown_local_links": "Все локальные ссылки проверены; несуществующих путей нет",
+  "figures_visually_inspected": [
+    "01_data_audit.png",
+    "02_numeric_distributions.png",
+    "03_model_comparison.png",
+    "04_primary_diagnostics.png",
+    "05_seed_sensitivity.png",
+    "06_paired_ablations.png",
+    "07_error_slices.png",
+    "08_protocol_sensitivity.png",
+    "09_error_contributions.png"
+  ],
+  "demonstration_submission": {
+    "rows": 4277,
+    "columns": [
+      "PassengerId",
+      "Transported"
+    ],
+    "not_uploaded": true
+  },
+  "holdout": {
+    "rows": 1725,
+    "evaluated": false
+  },
+  "pending_human_items": [
+    "Проверить требования курса перед сдачей",
+    "Подтвердить имя студента и бронь темы",
+    "Указать репозиторий GitHub, отправить работу и запросить проверку"
+  ],
+  "source_files_sha256": {
+    "src/spaceship_hw1/__init__.py": "16bdd44c7e6cee9a238fe88b6365f47c45904c290d2049a523e3dd124cf9a05a",
+    "src/spaceship_hw1/__main__.py": "7cbfb616da33c26ff7f3a5d777dd310f536502e683e2f9a0c0f530b6ac463102",
+    "src/spaceship_hw1/data.py": "063d6e26739da01e1a4fdb2e2da56cf33a970748ba6d78fba11a86398fc8e48b",
+    "src/spaceship_hw1/experiment.py": "06bc8f69865be1ad2f1e89380c5280a550854b6a9daf29d55697c2b25a197cda",
+    "src/spaceship_hw1/features.py": "e31a0b403800cdaf181231789d63e9433bdf231e7f2291b5d2154ba67496b2c6",
+    "src/spaceship_hw1/reporting.py": "c94e9d51545951a18ff98f93e636180dacb490660f18a10c1573d29c6fe5d7f2"
+  },
+  "independent_metric_audit": {
+    "passed": true,
+    "folds_recomputed": 80,
+    "absolute_tolerance": 1e-10
+  },
+  "unchanged_original_predictions": {
+    "passed": true,
+    "rows": 111488,
+    "prediction_and_metric_csv_byte_identical": true,
+    "maximum_probability_difference": 0.0
+  },
+  "error_analysis": {
+    "verified_from_oof_ledger": true,
+    "false_positives": 790,
+    "false_negatives": 687,
+    "representative_examples": [
+      "2964_01",
+      "6763_01"
+    ],
+    "selection": "Ближайшая к медиане уверенность внутри типа; анализ после экспериментов"
+  },
+  "conclusions": {
+    "file": "docs/CONCLUSIONS.md",
+    "included_in_readme": true,
+    "all_numeric_claims_checked_against_saved_results": true,
+    "source_code_unchanged": false,
+    "scientific_setup_unchanged": true
+  },
+  "code_and_language_review": {
+    "pycodestyle_version": "2.15.0",
+    "pycodestyle_issues": 0,
+    "ruff_version": "0.17.4",
+    "ruff_select": [
+      "E",
+      "F",
+      "I"
+    ],
+    "ruff_issues": 0,
+    "max_line_length": 79,
+    "em_dash_count": 0,
+    "editorial_reading_passes": 2,
+    "independent_editorial_review": true,
+    "physical_lines_before": 969,
+    "physical_lines_after": 1806,
+    "ast_statements_before": 756,
+    "ast_statements_after": 812,
+    "generate_report_lines_before": 197,
+    "generate_report_lines_after": 45,
+    "main_and_reproduction_completed": true,
+    "current_source_hashes_verified": true,
+    "reference_predictions_byte_identical": true
+  }
+}

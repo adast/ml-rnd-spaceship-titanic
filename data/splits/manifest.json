@@ -1,0 +1,11 @@
+{
+  "data_sha256": "17336d553f49ebdf6ecb266d2b5d3746e5dd308445f7c7864141c4f28d2a88d0",
+  "split_config_sha256": "a006dc78aa846e8d65d3746da5ac3c8994774db33db6172173537a45b3f425ca",
+  "assignments_sha256": "86aa58002d66d4f834724efc0cd4e6e476b74c3ef7d312981ae9b500ee42d671",
+  "total_rows": 8693,
+  "development_rows": 6968,
+  "final_holdout_rows": 1725,
+  "development_groups": 4986,
+  "holdout_groups": 1231,
+  "holdout_evaluated": false
+}

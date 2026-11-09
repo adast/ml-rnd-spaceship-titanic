@@ -1,0 +1,79 @@
+{
+  "primary_seed": 42,
+  "primary_model": "logistic_cabin",
+  "models": [
+    {
+      "model": "dummy_prior",
+      "fold_accuracy_mean": 0.5024397453551834,
+      "fold_accuracy_sd": 0.0003003102412138484,
+      "accuracy": 0.5024397244546498,
+      "f1": 0.6688317890916038,
+      "precision": 0.5024397244546498,
+      "recall": 1.0,
+      "roc_auc": 0.4997127196012314,
+      "average_precision": 0.5022817249342106,
+      "log_loss": 0.6931353572229854,
+      "brier": 0.2499940883541817
+    },
+    {
+      "model": "logistic_core",
+      "fold_accuracy_mean": 0.7802816089053589,
+      "fold_accuracy_sd": 0.007347063890293693,
+      "accuracy": 0.7802812858783008,
+      "f1": 0.7830522885078646,
+      "precision": 0.7769966254218222,
+      "recall": 0.7892030848329049,
+      "roc_auc": 0.8670044991883732,
+      "average_precision": 0.8734862895250654,
+      "log_loss": 0.45387654060184873,
+      "brier": 0.14822781583824013
+    },
+    {
+      "model": "logistic_cabin",
+      "fold_accuracy_mean": 0.7880303340848536,
+      "fold_accuracy_sd": 0.007778414627867015,
+      "accuracy": 0.7880309988518944,
+      "f1": 0.7921182266009852,
+      "precision": 0.7807991120976693,
+      "recall": 0.803770351328192,
+      "roc_auc": 0.8756411596769047,
+      "average_precision": 0.8847467880390694,
+      "log_loss": 0.43951352103528374,
+      "brier": 0.1435193074397994
+    },
+    {
+      "model": "logistic_missing",
+      "fold_accuracy_mean": 0.7890346382455421,
+      "fold_accuracy_sd": 0.00909121828202754,
+      "accuracy": 0.7890355912743973,
+      "f1": 0.7928410372040586,
+      "precision": 0.7824756606397775,
+      "recall": 0.8034847186518138,
+      "roc_auc": 0.8757911848005517,
+      "average_precision": 0.885001536084442,
+      "log_loss": 0.4393932874683618,
+      "brier": 0.1434124693289871
+    },
+    {
+      "model": "logistic_log_spend",
+      "fold_accuracy_mean": 0.7794221157025134,
+      "fold_accuracy_sd": 0.00650821108060832,
+      "accuracy": 0.7794202066590127,
+      "f1": 0.7842807017543859,
+      "precision": 0.7709713024282561,
+      "recall": 0.7980576978006284,
+      "roc_auc": 0.8546421736028776,
+      "average_precision": 0.8713448341766822,
+      "log_loss": 0.47731243110624605,
+      "brier": 0.15475861568262886
+    }
+  ],
+  "hypothesis": {
+    "criterion": "Positive mean paired fold accuracy difference and at least 4/5 improved primary folds",
+    "mean_accuracy_difference": 0.2855905887296701,
+    "improved_folds": 5,
+    "supported_by_operational_rule": true,
+    "is_statistical_significance_test": false
+  },
+  "holdout_evaluated": false
+}

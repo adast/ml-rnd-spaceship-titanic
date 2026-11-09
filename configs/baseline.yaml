@@ -1,0 +1,31 @@
+project: spaceship-titanic-hw1
+schema_version: 1
+data:
+  train: data/raw/train.csv
+  expected_rows: 8693
+split:
+  holdout_fraction: 0.20
+  holdout_salt: spaceship-final-v1
+  n_splits: 5
+  seeds: [42, 17, 2026]
+  primary_seed: 42
+models:
+  - dummy_prior
+  - logistic_core
+  - logistic_cabin
+  - logistic_missing
+  - logistic_log_spend
+primary_model: logistic_cabin
+logistic:
+  C: 1.0
+  solver: lbfgs
+  max_iter: 3000
+  tol: 0.0001
+  threshold: 0.5
+evaluation:
+  bootstrap_repetitions: 2000
+  bootstrap_seed: 9187
+  random_split_diagnostic: true
+  hypothesis_min_improved_folds: 4
+runtime:
+  blas_threads: 1

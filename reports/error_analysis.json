@@ -1,0 +1,69 @@
+{
+  "scope": "Описательный анализ OOF-ошибок рабочей выборки добавлен при проверке после экспериментов; без выбора модели и обращения к окончательной отложенной выборке",
+  "selection_limitation": "Примеры характерны по уверенности внутри FP/FN; представительность по всем признакам не утверждается",
+  "total_errors": 1477,
+  "error_types": [
+    {
+      "error_type": "False positive",
+      "count": 790,
+      "share_of_errors": 0.5348679756262694,
+      "class_error_rate": 0.22786270550908566,
+      "median_confidence": 0.644228722190853
+    },
+    {
+      "error_type": "False negative",
+      "count": 687,
+      "share_of_errors": 0.4651320243737305,
+      "class_error_rate": 0.19622964867180806,
+      "median_confidence": 0.6746147992123772
+    }
+  ],
+  "typical_examples": [
+    {
+      "error_type": "False positive",
+      "selection_rule": "Ближайшая к медиане уверенность внутри типа ошибки; при равенстве выбирается минимальный PassengerId",
+      "error_type_count": 790,
+      "median_confidence": 0.644228722190853,
+      "PassengerId": "2964_01",
+      "fold": 1,
+      "y_true": 0,
+      "y_pred": 1,
+      "probability": 0.6442558318,
+      "missing_count": 0,
+      "Age": 26.0,
+      "RoomService": 2050.0,
+      "FoodCourt": 8525.0,
+      "ShoppingMall": 0.0,
+      "Spa": 270.0,
+      "VRDeck": 636.0,
+      "HomePlanet": "Europa",
+      "CryoSleep": false,
+      "Destination": "TRAPPIST-1e",
+      "VIP": false,
+      "Cabin": "A/35/S"
+    },
+    {
+      "error_type": "False negative",
+      "selection_rule": "Ближайшая к медиане уверенность внутри типа ошибки; при равенстве выбирается минимальный PassengerId",
+      "error_type_count": 687,
+      "median_confidence": 0.6746147992123772,
+      "PassengerId": "6763_01",
+      "fold": 0,
+      "y_true": 1,
+      "y_pred": 0,
+      "probability": 0.3253852008,
+      "missing_count": 0,
+      "Age": 20.0,
+      "RoomService": 0.0,
+      "FoodCourt": 97.0,
+      "ShoppingMall": 725.0,
+      "Spa": 26.0,
+      "VRDeck": 104.0,
+      "HomePlanet": "Earth",
+      "CryoSleep": false,
+      "Destination": "TRAPPIST-1e",
+      "VIP": false,
+      "Cabin": "G/1097/P"
+    }
+  ]
+}

@@ -3,3 +3,15 @@ name = "spaceship-hw1"
 version = "0.1.0"
 description = "Reproducible group-aware ML R&D baseline"
 requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 79
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
