@@ -1,0 +1,5 @@
+[project]
+name = "spaceship-hw1"
+version = "0.1.0"
+description = "Reproducible group-aware ML R&D baseline"
+requires-python = ">=3.12"
