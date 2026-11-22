@@ -1,0 +1,17 @@
+deck,side,n_passengers,n_groups,n_group_cabin_pairs,equal_ranks,spearman
+A,P,104,55,55,True,1
+A,S,109,68,68,True,1
+B,P,281,167,167,True,1
+B,S,321,186,186,True,1
+C,P,258,156,156,True,1
+C,S,344,196,196,True,1
+D,P,199,162,162,True,1
+D,S,180,138,138,True,1
+E,P,341,306,306,True,1
+E,S,351,304,304,True,1
+F,P,1155,976,976,True,1
+F,S,1110,941,941,True,1
+G,P,1022,800,800,True,1
+G,S,1024,790,790,True,1
+T,P,4,4,4,True,1
+T,S,1,1,1,,

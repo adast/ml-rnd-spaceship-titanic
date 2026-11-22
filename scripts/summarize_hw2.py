@@ -74,6 +74,12 @@ def read_ledgers(folder):
     return folds, data
 
 
+def interaction_pp(accuracy):
+    """Сравнить прибавку от номера каюты у бустинга и регрессии."""
+    return 100 * ((accuracy["MC"] - accuracy["M"])
+                  - (accuracy["C"] - accuracy["B1"]))
+
+
 def bootstrap_intervals(primary):
     """Оценить интервалы для разностей, повторно выбирая целые группы."""
     by_group = primary.groupby(["group", "model"])["correct"]
@@ -88,10 +94,14 @@ def bootstrap_intervals(primary):
             successes[sample].sum(axis=1) / counts[sample].sum(axis=1)[:, None]
         )
     scores = pd.DataFrame(np.concatenate(sampled_scores), columns=MODELS)
-    return {
+    intervals = {
         (a, b): np.percentile(100 * (scores[a] - scores[b]), [2.5, 97.5])
         for a, b in COMPARISONS
     }
+    intervals["interaction"] = np.percentile(
+        interaction_pp(scores), [2.5, 97.5]
+    )
+    return intervals
 
 
 def summarize(folds, data):
@@ -106,11 +116,23 @@ def summarize(folds, data):
     summary = summary.loc[order]
     intervals = bootstrap_intervals(data.loc[data["seed"] == PRIMARY])
     rows = []
+    interactions = []
     for seed in SEEDS:
         accuracy = folds.loc[seed, "accuracy"].unstack("model")
         correct = data.loc[data["seed"] == seed].pivot(
             index="PassengerId", columns="model", values="correct"
         )
+        interaction = interaction_pp(accuracy)
+        low, high = (intervals["interaction"] if seed == PRIMARY
+                     else (np.nan, np.nan))
+        interactions.append({
+            "seed": seed, "n_passengers": len(correct),
+            "mean_delta_pp": interaction.mean(),
+            "folds_positive": int((interaction > 0).sum()),
+            **{f"fold_{f}_delta_pp": interaction.loc[f] for f in FOLDS},
+            "pooled_delta_pp": interaction_pp(correct.mean()),
+            "pooled_ci95_low_pp": low, "pooled_ci95_high_pp": high,
+        })
         for candidate, reference in COMPARISONS:
             delta = 100 * (accuracy[candidate] - accuracy[reference])
             fixed = int((correct[candidate] & ~correct[reference]).sum())
@@ -128,7 +150,9 @@ def summarize(folds, data):
                 "pooled_delta_pp": 100 * (fixed - introduced) / len(correct),
                 "pooled_ci95_low_pp": low, "pooled_ci95_high_pp": high,
             })
-    return summary.reset_index(), pd.DataFrame(rows)
+    return (
+        summary.reset_index(), pd.DataFrame(rows), pd.DataFrame(interactions)
+    )
 
 
 def plot_ablations(primary, path):
@@ -201,10 +225,13 @@ def main():
                         help="Папка с folds.csv и predictions.csv.gz")
     folder = parser.parse_args().output
     folds, predictions = read_ledgers(folder)
-    summary, ablations = summarize(folds, predictions)
+    summary, ablations, interactions = summarize(folds, predictions)
     summary.to_csv(folder / "summary.csv", index=False, float_format="%.12g")
     ablations.to_csv(
         folder / "ablations.csv", index=False, float_format="%.12g"
+    )
+    interactions.to_csv(
+        folder / "interaction.csv", index=False, float_format="%.12g"
     )
     primary = ablations.loc[ablations["seed"] == PRIMARY]
     plot_ablations(primary, folder / "ablations.png")

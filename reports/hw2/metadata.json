@@ -1,5 +1,5 @@
 {
-  "started_at_utc": "2026-11-22T19:50:59.605849+00:00",
+  "started_at_utc": "2026-11-22T19:50:59.658647+00:00",
   "python": "3.14.9",
   "platform": "Linux x86_64",
   "versions": {
@@ -86,427 +86,427 @@
       "seed": 42,
       "fold": 0,
       "model": "B1",
-      "fit_seconds": 0.058537359116598964,
-      "predict_seconds": 0.014272070955485106
+      "fit_seconds": 0.05712236394174397,
+      "predict_seconds": 0.015031561953946948
     },
     {
       "seed": 42,
       "fold": 0,
       "model": "C",
-      "fit_seconds": 0.08960455702617764,
-      "predict_seconds": 0.013137690024450421
+      "fit_seconds": 0.08263998501934111,
+      "predict_seconds": 0.015267882030457258
     },
     {
       "seed": 42,
       "fold": 0,
       "model": "M",
-      "fit_seconds": 0.31493169302120805,
-      "predict_seconds": 0.027882069116458297
+      "fit_seconds": 0.3000156239140779,
+      "predict_seconds": 0.02168256393633783
     },
     {
       "seed": 42,
       "fold": 0,
       "model": "MC",
-      "fit_seconds": 0.31487697712145746,
-      "predict_seconds": 0.023912638891488314
+      "fit_seconds": 0.30522028100676835,
+      "predict_seconds": 0.023106203181669116
     },
     {
       "seed": 42,
       "fold": 1,
       "model": "B1",
-      "fit_seconds": 0.03906018799170852,
-      "predict_seconds": 0.013582046143710613
+      "fit_seconds": 0.0377271210309118,
+      "predict_seconds": 0.013161670882254839
     },
     {
       "seed": 42,
       "fold": 1,
       "model": "C",
-      "fit_seconds": 0.04587751207873225,
-      "predict_seconds": 0.020499794045463204
+      "fit_seconds": 0.04422717192210257,
+      "predict_seconds": 0.014631672063842416
     },
     {
       "seed": 42,
       "fold": 1,
       "model": "M",
-      "fit_seconds": 0.2954579549841583,
-      "predict_seconds": 0.02260400401428342
+      "fit_seconds": 0.2900457119103521,
+      "predict_seconds": 0.022273265989497304
     },
     {
       "seed": 42,
       "fold": 1,
       "model": "MC",
-      "fit_seconds": 0.3136313029099256,
-      "predict_seconds": 0.02652380196377635
+      "fit_seconds": 0.3067032531835139,
+      "predict_seconds": 0.02362539293244481
     },
     {
       "seed": 42,
       "fold": 2,
       "model": "B1",
-      "fit_seconds": 0.03994191298261285,
-      "predict_seconds": 0.01404335885308683
+      "fit_seconds": 0.03865261888131499,
+      "predict_seconds": 0.01334487902931869
     },
     {
       "seed": 42,
       "fold": 2,
       "model": "C",
-      "fit_seconds": 0.045113767962902784,
-      "predict_seconds": 0.01525388821028173
+      "fit_seconds": 0.04447581199929118,
+      "predict_seconds": 0.014584554824978113
     },
     {
       "seed": 42,
       "fold": 2,
       "model": "M",
-      "fit_seconds": 0.29970403597690165,
-      "predict_seconds": 0.022541371872648597
+      "fit_seconds": 0.2969217689242214,
+      "predict_seconds": 0.022508019115775824
     },
     {
       "seed": 42,
       "fold": 2,
       "model": "MC",
-      "fit_seconds": 0.31344317202456295,
-      "predict_seconds": 0.02392570092342794
+      "fit_seconds": 0.3107033248525113,
+      "predict_seconds": 0.02393436012789607
     },
     {
       "seed": 42,
       "fold": 3,
       "model": "B1",
-      "fit_seconds": 0.03885122202336788,
-      "predict_seconds": 0.01342792995274067
+      "fit_seconds": 0.03798733884468675,
+      "predict_seconds": 0.013381066033616662
     },
     {
       "seed": 42,
       "fold": 3,
       "model": "C",
-      "fit_seconds": 0.0453754048794508,
-      "predict_seconds": 0.01504190405830741
+      "fit_seconds": 0.044781876960769296,
+      "predict_seconds": 0.014830402098596096
     },
     {
       "seed": 42,
       "fold": 3,
       "model": "M",
-      "fit_seconds": 0.29791798582300544,
-      "predict_seconds": 0.02248735004104674
+      "fit_seconds": 0.29893739707767963,
+      "predict_seconds": 0.022493196884170175
     },
     {
       "seed": 42,
       "fold": 3,
       "model": "MC",
-      "fit_seconds": 0.30992234591394663,
-      "predict_seconds": 0.023423963924869895
+      "fit_seconds": 0.30924661993049085,
+      "predict_seconds": 0.023031943012028933
     },
     {
       "seed": 42,
       "fold": 4,
       "model": "B1",
-      "fit_seconds": 0.04035944491624832,
-      "predict_seconds": 0.013689165003597736
+      "fit_seconds": 0.037887356942519546,
+      "predict_seconds": 0.013639915036037564
     },
     {
       "seed": 42,
       "fold": 4,
       "model": "C",
-      "fit_seconds": 0.04654073901474476,
-      "predict_seconds": 0.014745528809726238
+      "fit_seconds": 0.04557119985111058,
+      "predict_seconds": 0.014375217026099563
     },
     {
       "seed": 42,
       "fold": 4,
       "model": "M",
-      "fit_seconds": 0.29082195181399584,
-      "predict_seconds": 0.022479112027212977
+      "fit_seconds": 0.288166549988091,
+      "predict_seconds": 0.02186739700846374
     },
     {
       "seed": 42,
       "fold": 4,
       "model": "MC",
-      "fit_seconds": 0.3600486710201949,
-      "predict_seconds": 0.02995293983258307
+      "fit_seconds": 0.3341842140071094,
+      "predict_seconds": 0.025544842006638646
     },
     {
       "seed": 17,
       "fold": 0,
       "model": "B1",
-      "fit_seconds": 0.04956630221568048,
-      "predict_seconds": 0.0144036328420043
+      "fit_seconds": 0.043862637132406235,
+      "predict_seconds": 0.01486550597473979
     },
     {
       "seed": 17,
       "fold": 0,
       "model": "C",
-      "fit_seconds": 0.05935930414125323,
-      "predict_seconds": 0.0184479970484972
+      "fit_seconds": 0.05059784301556647,
+      "predict_seconds": 0.01593209197744727
     },
     {
       "seed": 17,
       "fold": 0,
       "model": "M",
-      "fit_seconds": 0.3407600289210677,
-      "predict_seconds": 0.028385346988216043
+      "fit_seconds": 0.3234154209494591,
+      "predict_seconds": 0.02352911909110844
     },
     {
       "seed": 17,
       "fold": 0,
       "model": "MC",
-      "fit_seconds": 0.33981589903123677,
-      "predict_seconds": 0.02696120203472674
+      "fit_seconds": 0.3293381738476455,
+      "predict_seconds": 0.025606061099097133
     },
     {
       "seed": 17,
       "fold": 1,
       "model": "B1",
-      "fit_seconds": 0.04379781009629369,
-      "predict_seconds": 0.015066808788105845
+      "fit_seconds": 0.04169287602417171,
+      "predict_seconds": 0.014320231042802334
     },
     {
       "seed": 17,
       "fold": 1,
       "model": "C",
-      "fit_seconds": 0.04924026504158974,
-      "predict_seconds": 0.015522229950875044
+      "fit_seconds": 0.04865693091414869,
+      "predict_seconds": 0.015545478090643883
     },
     {
       "seed": 17,
       "fold": 1,
       "model": "M",
-      "fit_seconds": 0.32037940598092973,
-      "predict_seconds": 0.024290783097967505
+      "fit_seconds": 0.3129246518947184,
+      "predict_seconds": 0.02384158712811768
     },
     {
       "seed": 17,
       "fold": 1,
       "model": "MC",
-      "fit_seconds": 0.3360270138364285,
-      "predict_seconds": 0.025543340016156435
+      "fit_seconds": 0.3285106320399791,
+      "predict_seconds": 0.024755913997069
     },
     {
       "seed": 17,
       "fold": 2,
       "model": "B1",
-      "fit_seconds": 0.04250691318884492,
-      "predict_seconds": 0.014673885889351368
+      "fit_seconds": 0.04123117681592703,
+      "predict_seconds": 0.01422358420677483
     },
     {
       "seed": 17,
       "fold": 2,
       "model": "C",
-      "fit_seconds": 0.048323976108804345,
-      "predict_seconds": 0.015463600866496563
+      "fit_seconds": 0.04864530893974006,
+      "predict_seconds": 0.01591822993941605
     },
     {
       "seed": 17,
       "fold": 2,
       "model": "M",
-      "fit_seconds": 0.31962867290712893,
-      "predict_seconds": 0.024417737033218145
+      "fit_seconds": 0.3151148378383368,
+      "predict_seconds": 0.024095370201393962
     },
     {
       "seed": 17,
       "fold": 2,
       "model": "MC",
-      "fit_seconds": 0.3396191708743572,
-      "predict_seconds": 0.025581378024071455
+      "fit_seconds": 0.3331216850783676,
+      "predict_seconds": 0.0247477691154927
     },
     {
       "seed": 17,
       "fold": 3,
       "model": "B1",
-      "fit_seconds": 0.042708866065368056,
-      "predict_seconds": 0.014474658062681556
+      "fit_seconds": 0.04134056018665433,
+      "predict_seconds": 0.014298080001026392
     },
     {
       "seed": 17,
       "fold": 3,
       "model": "C",
-      "fit_seconds": 0.04650802398100495,
-      "predict_seconds": 0.01624610787257552
+      "fit_seconds": 0.04560740711167455,
+      "predict_seconds": 0.015452397055923939
     },
     {
       "seed": 17,
       "fold": 3,
       "model": "M",
-      "fit_seconds": 0.31616634712554514,
-      "predict_seconds": 0.024578873999416828
+      "fit_seconds": 0.3177497370634228,
+      "predict_seconds": 0.02366384188644588
     },
     {
       "seed": 17,
       "fold": 3,
       "model": "MC",
-      "fit_seconds": 0.3279937980696559,
-      "predict_seconds": 0.026021731086075306
+      "fit_seconds": 0.3260428560897708,
+      "predict_seconds": 0.024835751857608557
     },
     {
       "seed": 17,
       "fold": 4,
       "model": "B1",
-      "fit_seconds": 0.04032505815848708,
-      "predict_seconds": 0.013446219032630324
+      "fit_seconds": 0.038789337035268545,
+      "predict_seconds": 0.013726542936637998
     },
     {
       "seed": 17,
       "fold": 4,
       "model": "C",
-      "fit_seconds": 0.04691334790550172,
-      "predict_seconds": 0.014672619057819247
+      "fit_seconds": 0.04661567113362253,
+      "predict_seconds": 0.015148716978728771
     },
     {
       "seed": 17,
       "fold": 4,
       "model": "M",
-      "fit_seconds": 0.31221721414476633,
-      "predict_seconds": 0.024230906972661614
+      "fit_seconds": 0.3076413779053837,
+      "predict_seconds": 0.023128187051042914
     },
     {
       "seed": 17,
       "fold": 4,
       "model": "MC",
-      "fit_seconds": 0.3234713738784194,
-      "predict_seconds": 0.02551946695894003
+      "fit_seconds": 0.3194089438766241,
+      "predict_seconds": 0.024557144148275256
     },
     {
       "seed": 2026,
       "fold": 0,
       "model": "B1",
-      "fit_seconds": 0.04160821787081659,
-      "predict_seconds": 0.013605359941720963
+      "fit_seconds": 0.040085023967549205,
+      "predict_seconds": 0.013495969818904996
     },
     {
       "seed": 2026,
       "fold": 0,
       "model": "C",
-      "fit_seconds": 0.04593688598833978,
-      "predict_seconds": 0.01603224710561335
+      "fit_seconds": 0.04547216719947755,
+      "predict_seconds": 0.014888448873534799
     },
     {
       "seed": 2026,
       "fold": 0,
       "model": "M",
-      "fit_seconds": 0.3116613859310746,
-      "predict_seconds": 0.023623231099918485
+      "fit_seconds": 0.31218386604450643,
+      "predict_seconds": 0.023542567854747176
     },
     {
       "seed": 2026,
       "fold": 0,
       "model": "MC",
-      "fit_seconds": 0.32521083392202854,
-      "predict_seconds": 0.025936492020264268
+      "fit_seconds": 0.3228308849502355,
+      "predict_seconds": 0.02489045192487538
     },
     {
       "seed": 2026,
       "fold": 1,
       "model": "B1",
-      "fit_seconds": 0.041503787972033024,
-      "predict_seconds": 0.013477158034220338
+      "fit_seconds": 0.0397379519417882,
+      "predict_seconds": 0.013629689114168286
     },
     {
       "seed": 2026,
       "fold": 1,
       "model": "C",
-      "fit_seconds": 0.04806079692207277,
-      "predict_seconds": 0.014947056071832776
+      "fit_seconds": 0.046847952995449305,
+      "predict_seconds": 0.015188120072707534
     },
     {
       "seed": 2026,
       "fold": 1,
       "model": "M",
-      "fit_seconds": 0.31370450207032263,
-      "predict_seconds": 0.024425684940069914
+      "fit_seconds": 0.3200557299423963,
+      "predict_seconds": 0.023673851042985916
     },
     {
       "seed": 2026,
       "fold": 1,
       "model": "MC",
-      "fit_seconds": 0.32969260681420565,
-      "predict_seconds": 0.025310459081083536
+      "fit_seconds": 0.3263525089714676,
+      "predict_seconds": 0.024787315167486668
     },
     {
       "seed": 2026,
       "fold": 2,
       "model": "B1",
-      "fit_seconds": 0.04099436802789569,
-      "predict_seconds": 0.013918997952714562
+      "fit_seconds": 0.04099476896226406,
+      "predict_seconds": 0.013540350133553147
     },
     {
       "seed": 2026,
       "fold": 2,
       "model": "C",
-      "fit_seconds": 0.04643074097111821,
-      "predict_seconds": 0.01609106012620032
+      "fit_seconds": 0.04623213899321854,
+      "predict_seconds": 0.01490448391996324
     },
     {
       "seed": 2026,
       "fold": 2,
       "model": "M",
-      "fit_seconds": 0.31369733600877225,
-      "predict_seconds": 0.023605798138305545
+      "fit_seconds": 0.31067375699058175,
+      "predict_seconds": 0.023229863960295916
     },
     {
       "seed": 2026,
       "fold": 2,
       "model": "MC",
-      "fit_seconds": 0.3235694929026067,
-      "predict_seconds": 0.025990047957748175
+      "fit_seconds": 0.3179058020468801,
+      "predict_seconds": 0.024090660037472844
     },
     {
       "seed": 2026,
       "fold": 3,
       "model": "B1",
-      "fit_seconds": 0.04241360304877162,
-      "predict_seconds": 0.013915671966969967
+      "fit_seconds": 0.04109193803742528,
+      "predict_seconds": 0.014092739904299378
     },
     {
       "seed": 2026,
       "fold": 3,
       "model": "C",
-      "fit_seconds": 0.04824794898740947,
-      "predict_seconds": 0.015138412825763226
+      "fit_seconds": 0.048019373090937734,
+      "predict_seconds": 0.015392941888421774
     },
     {
       "seed": 2026,
       "fold": 3,
       "model": "M",
-      "fit_seconds": 0.31648362311534584,
-      "predict_seconds": 0.02463748794980347
+      "fit_seconds": 0.3116305940784514,
+      "predict_seconds": 0.023611570009961724
     },
     {
       "seed": 2026,
       "fold": 3,
       "model": "MC",
-      "fit_seconds": 0.3363605940248817,
-      "predict_seconds": 0.02592706703580916
+      "fit_seconds": 0.3274363079108298,
+      "predict_seconds": 0.025104567175731063
     },
     {
       "seed": 2026,
       "fold": 4,
       "model": "B1",
-      "fit_seconds": 0.043734621023759246,
-      "predict_seconds": 0.01355266198515892
+      "fit_seconds": 0.04033194808289409,
+      "predict_seconds": 0.014087497955188155
     },
     {
       "seed": 2026,
       "fold": 4,
       "model": "C",
-      "fit_seconds": 0.04787993896752596,
-      "predict_seconds": 0.015558835817500949
+      "fit_seconds": 0.04505050997249782,
+      "predict_seconds": 0.015075753210112453
     },
     {
       "seed": 2026,
       "fold": 4,
       "model": "M",
-      "fit_seconds": 0.31583935185335577,
-      "predict_seconds": 0.023589533986523747
+      "fit_seconds": 0.3101429841481149,
+      "predict_seconds": 0.023282730020582676
     },
     {
       "seed": 2026,
       "fold": 4,
       "model": "MC",
-      "fit_seconds": 0.3210000752005726,
-      "predict_seconds": 0.022528978995978832
+      "fit_seconds": 0.3247326679993421,
+      "predict_seconds": 0.0241289169061929
     }
   ],
   "output_sha256": {
     "folds.csv": "74fee74eacaa4d365e46345bc11d8761039a06105e1194858348386b3613cf6c",
     "predictions.csv.gz": "1b236c025a37e5dc6c70f8d3e0205dbe81d67a38f62a3334db6ba27e6c035691"
   },
-  "finished_at_utc": "2026-11-22T19:51:13.437450+00:00",
-  "elapsed_seconds": 13.831601
+  "finished_at_utc": "2026-11-22T19:51:13.237975+00:00",
+  "elapsed_seconds": 13.579328
 }

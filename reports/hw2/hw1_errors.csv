@@ -1,0 +1,10 @@
+seed,CryoSleep,n_passengers,correct_B1,correct_M,net_correct
+42,False,4345,3362,3443,81
+42,True,2446,1987,1996,9
+42,missing,177,142,138,-4
+17,False,4345,3354,3443,89
+17,True,2446,1987,1996,9
+17,missing,177,140,144,4
+2026,False,4345,3355,3419,64
+2026,True,2446,1987,1996,9
+2026,missing,177,140,139,-1
