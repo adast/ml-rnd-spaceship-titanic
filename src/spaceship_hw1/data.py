@@ -30,8 +30,10 @@ def read_config(path):
     return config
 
 
-def read_training(path, expected_rows=None):
-    frame = pd.read_csv(path, dtype={"PassengerId": "string"})
+def read_training(path, expected_rows=None, *, skiprows=None):
+    frame = pd.read_csv(
+        path, dtype={"PassengerId": "string"}, skiprows=skiprows
+    )
     required = {"PassengerId", "Transported", *RAW_FEATURES}
     if not required.issubset(frame.columns):
         raise ValueError(

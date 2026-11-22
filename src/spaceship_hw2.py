@@ -14,6 +14,8 @@ import pandas as pd
 import yaml
 from sklearn.ensemble import HistGradientBoostingClassifier
 from sklearn.exceptions import ConvergenceWarning
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import FunctionTransformer
 from threadpoolctl import threadpool_limits
 
 from spaceship_hw1.data import (
@@ -23,7 +25,7 @@ from spaceship_hw1.data import (
     sha256,
 )
 from spaceship_hw1.experiment import score_predictions, write_json
-from spaceship_hw1.features import PassengerFeatures, make_model
+from spaceship_hw1.features import SPENDING, PassengerFeatures, make_model
 
 MODELS = ("B1", "C", "M", "MC")
 
@@ -59,6 +61,29 @@ def make_hw2_model(name, baseline, boosting):
     return model
 
 
+def spending_features(frame):
+    """Пропуск в любой из пяти сумм оставляет оба новых признака пустыми."""
+    bills = frame[SPENDING]
+    total = bills.sum(axis=1, min_count=len(SPENDING))
+    food_and_shopping = bills.FoodCourt + bills.ShoppingMall
+    return frame.assign(
+        TotalSpend=total,
+        SpendShare=food_and_shopping / total.mask(total.eq(0), 1),
+    )
+
+
+def spending_model(baseline, boosting, columns):
+    """Extend MC with the requested numeric spending summaries."""
+    model = make_hw2_model("MC", baseline, boosting)
+    model.set_params(features=make_pipeline(
+        model["features"], FunctionTransformer(spending_features)
+    ))
+    for name, _, selected in model["preprocess"].transformers:
+        if name == "numeric":
+            selected.extend(columns)
+    return model
+
+
 def load_development(root, baseline):
     """Require the HW1 inputs and return only development rows and folds."""
     manifest_file = root / "data/splits/manifest.json"
@@ -70,14 +95,25 @@ def load_development(root, baseline):
     train_path = root / baseline["data"]["train"]
     if sha256(train_path) != provenance["files"]["train.csv"]["sha256"]:
         raise ValueError("Training CSV differs from HW1 provenance")
-    records = read_training(train_path, baseline["data"]["expected_rows"])
-    assignments, manifest = freeze_splits(records, baseline, root)
-    keep = assignments["role"].eq("development")
-    return (
-        records.loc[keep].reset_index(drop=True),
-        assignments.loc[keep].reset_index(drop=True),
-        manifest,
+    ids = pd.read_csv(
+        train_path, usecols=["PassengerId"], dtype={"PassengerId": "string"}
     )
+    if len(ids) != baseline["data"]["expected_rows"]:
+        raise ValueError("Training row count differs from HW1")
+    assignments, manifest = freeze_splits(
+        ids.sort_values("PassengerId"), baseline, root
+    )
+    split = assignments.loc[
+        assignments["role"].eq("development")
+    ].reset_index(drop=True)
+    # CSV row numbers follow the source order; HW1 folds follow sorted IDs.
+    excluded = np.flatnonzero(~ids["PassengerId"].isin(split["PassengerId"]))
+    dev = read_training(
+        train_path, expected_rows=len(split), skiprows=excluded + 1
+    )
+    if not dev["PassengerId"].equals(split["PassengerId"]):
+        raise ValueError("Development rows differ from frozen HW1 IDs")
+    return dev, split, manifest
 
 
 def compare_historical_b1(predictions, reference_path):

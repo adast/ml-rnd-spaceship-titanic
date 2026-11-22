@@ -80,11 +80,8 @@ def interaction_pp(accuracy):
                   - (accuracy["C"] - accuracy["B1"]))
 
 
-def bootstrap_intervals(primary):
-    """Оценить интервалы для разностей, повторно выбирая целые группы."""
-    by_group = primary.groupby(["group", "model"])["correct"]
-    successes = by_group.sum().unstack()[list(MODELS)].to_numpy()
-    counts = by_group.size().unstack()[MODELS[0]].to_numpy()
+def bootstrap_scores(successes, counts):
+    """Доли верных ответов при повторном выборе одних и тех же групп."""
     rng = np.random.default_rng(BOOTSTRAP_SEED)
     sampled_scores = []
     for start in range(0, REPETITIONS, 64):
@@ -93,7 +90,15 @@ def bootstrap_intervals(primary):
         sampled_scores.append(
             successes[sample].sum(axis=1) / counts[sample].sum(axis=1)[:, None]
         )
-    scores = pd.DataFrame(np.concatenate(sampled_scores), columns=MODELS)
+    return np.concatenate(sampled_scores)
+
+
+def bootstrap_intervals(primary):
+    """Оценить интервалы для разностей, повторно выбирая целые группы."""
+    by_group = primary.groupby(["group", "model"])["correct"]
+    successes = by_group.sum().unstack()[list(MODELS)].to_numpy()
+    counts = by_group.size().unstack()[MODELS[0]].to_numpy()
+    scores = pd.DataFrame(bootstrap_scores(successes, counts), columns=MODELS)
     intervals = {
         (a, b): np.percentile(100 * (scores[a] - scores[b]), [2.5, 97.5])
         for a, b in COMPARISONS

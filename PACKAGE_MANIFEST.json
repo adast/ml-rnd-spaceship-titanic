@@ -11,13 +11,13 @@
   },
   {
     "path": "HW2.md",
-    "bytes": 23562,
-    "sha256": "a603378e2eaaec8ba23b0761d96cb634893155809f80db988b0e402536f5a8ac"
+    "bytes": 31596,
+    "sha256": "b0b2532ec4bfd9cd7e087f8e67aa2cad8dc0db78c00c43d195ecc913be3dea6c"
   },
   {
     "path": "README.md",
-    "bytes": 34802,
-    "sha256": "e751f653799c33abb419472691f7ae94f153044b37fb146bdea81d889fa2cb99"
+    "bytes": 35136,
+    "sha256": "577fb24db032227fbe1a949ce34cac7e93fa80071065f489b36198f448ce2c93"
   },
   {
     "path": "artifacts/baseline.joblib",
@@ -81,8 +81,8 @@
   },
   {
     "path": "docs/FUTURE_HOMEWORK.md",
-    "bytes": 3582,
-    "sha256": "ff45fa52001b7913e48b50ec4b710e9d127e94304a4673c2921eb8e446cbf753"
+    "bytes": 4165,
+    "sha256": "10531b21e15aa91b535c40834bfd88a7b9af823874260f4ace55c62d29fc1242"
   },
   {
     "path": "docs/HW2_PLAN.md",
@@ -101,8 +101,8 @@
   },
   {
     "path": "docs/README.template.md",
-    "bytes": 30569,
-    "sha256": "6db58891cfb89c9630d86e51f329b397eef73cd72ac8bdc52d532dfed250c2dd"
+    "bytes": 30903,
+    "sha256": "af0d07cc6baac9e6d2e220adbdcd83c72a59a6f064cf2b5b3ebaa918033d6c12"
   },
   {
     "path": "docs/SUBMISSION_CHECKLIST.md",
@@ -256,13 +256,23 @@
   },
   {
     "path": "reports/hw2/metadata.json",
-    "bytes": 12552,
-    "sha256": "4ee8c19e43f3051f4f45aaabcccbecf1165bae0053c239d8b608e74be550ac84"
+    "bytes": 12559,
+    "sha256": "497da46ff908a938cfc296cd9fe02dbf7ff373413b55715169f8066090c26aa3"
   },
   {
     "path": "reports/hw2/predictions.csv.gz",
     "bytes": 1281927,
     "sha256": "1b236c025a37e5dc6c70f8d3e0205dbe81d67a38f62a3334db6ba27e6c035691"
+  },
+  {
+    "path": "reports/hw2/spending.csv",
+    "bytes": 1807,
+    "sha256": "a20aa6125160c34274fb07313c04a98cb5bd65b6f364f67821b67a3cfca1742a"
+  },
+  {
+    "path": "reports/hw2/spending_predictions.csv.gz",
+    "bytes": 1190222,
+    "sha256": "f623efdf0a6011ea0f9df38c338a5292eeeb4eb618ccec8195603dd169be45f3"
   },
   {
     "path": "reports/hw2/summary.csv",
@@ -325,14 +335,19 @@
     "sha256": "c72ef9d6342e289960ae9f36df8c04ea1664af4511177054ff74d378993e6b80"
   },
   {
+    "path": "scripts/check_hw2_spending.py",
+    "bytes": 5135,
+    "sha256": "43c010d9135c9d42a05a6e8a0bd6bab6820f3d17dd387d3b35b0c63b71031772"
+  },
+  {
     "path": "scripts/diagnose_hw2.py",
     "bytes": 6413,
     "sha256": "5c5447264608c1451a7c807027792dfaffd4798690556c16f3cb413023eacb81"
   },
   {
     "path": "scripts/download_data.py",
-    "bytes": 1760,
-    "sha256": "e1571a6ff90eca769da0458a075ef23efdf6b6be1c12b58f5be96060b32cfb0c"
+    "bytes": 1905,
+    "sha256": "e473964a755c4c91512372d4f8d1758b2e52482c93b3039f79800e3e6620c493"
   },
   {
     "path": "scripts/package_handin.py",
@@ -356,8 +371,8 @@
   },
   {
     "path": "scripts/run_hw2.sh",
-    "bytes": 559,
-    "sha256": "f1beac4f13bd8dbac0e5eed402bdc04250fc3e56fe91a98e8eea7947c1ad650f"
+    "bytes": 622,
+    "sha256": "ffff625b00f9eae885e099f6cb5dcb337d619b48d90ae1117ef56b628fd5dbc3"
   },
   {
     "path": "scripts/stress_hw2.py",
@@ -366,8 +381,8 @@
   },
   {
     "path": "scripts/summarize_hw2.py",
-    "bytes": 10914,
-    "sha256": "043ac158d5c11f134c99e9bd1496f0d5ebd9e390f10452a3042f1d5a01f48e22"
+    "bytes": 11128,
+    "sha256": "542e2f3415ad0c4fe7bd0a7528d04deb1c31065c8060b5382d55119715b08ee1"
   },
   {
     "path": "src/spaceship_hw1/__init__.py",
@@ -381,8 +396,8 @@
   },
   {
     "path": "src/spaceship_hw1/data.py",
-    "bytes": 6343,
-    "sha256": "063d6e26739da01e1a4fdb2e2da56cf33a970748ba6d78fba11a86398fc8e48b"
+    "bytes": 6394,
+    "sha256": "7ffbd441b73f9932bff099d99b1301fcc1b60a3634e77afd28992187325eb767"
   },
   {
     "path": "src/spaceship_hw1/experiment.py",
@@ -401,13 +416,13 @@
   },
   {
     "path": "src/spaceship_hw2.py",
-    "bytes": 9309,
-    "sha256": "5481dc8b608d855d248aa358ddf03feaa7cd0ed4041bff1039f236e15dce7d19"
+    "bytes": 10801,
+    "sha256": "a2751e84a6e92ee91a29d3750345dc472c0dfcdff8137e2e37dd7d1121d2f996"
   },
   {
     "path": "tests/test_hw2.py",
-    "bytes": 3447,
-    "sha256": "b7e62f5381bbe2750dea73e40ac097c356404cbb3a32a2e297577fbb7edea2d7"
+    "bytes": 5528,
+    "sha256": "4e6c47fb20240ad691299ea3ee63df1751b2783426db44c1e725c4560eb9698c"
   },
   {
     "path": "tests/test_integrity.py",

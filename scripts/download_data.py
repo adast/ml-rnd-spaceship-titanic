@@ -11,10 +11,13 @@ from pathlib import Path
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--verify-only", action="store_true")
+    parser.add_argument("--train-only", action="store_true")
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     provenance = json.loads((root / "data/PROVENANCE.json").read_text())
-    for name, entry in provenance["files"].items():
+    names = ("train.csv",) if args.train_only else provenance["files"]
+    for name in names:
+        entry = provenance["files"][name]
         destination = root / "data/raw" / name
         if destination.exists():
             body = destination.read_bytes()
