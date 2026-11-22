@@ -30,6 +30,11 @@
     "sha256": "bd0587ad86e0b76b0ce17d3a429ffacd792e4fec792ac7154c2328a53f00db98"
   },
   {
+    "path": "configs/hw2.yaml",
+    "bytes": 160,
+    "sha256": "4eaaa480694fff271c2622bb4bb57c4cf8c6e73e03f52f22a668f05ab6fb175f"
+  },
+  {
     "path": "data/PROVENANCE.json",
     "bytes": 1560,
     "sha256": "45fd23e45906803a7a96e3c1e1c21b1ec4239627646bf59835a7e5381c74574e"
@@ -73,6 +78,11 @@
     "path": "docs/FUTURE_HOMEWORK.md",
     "bytes": 4792,
     "sha256": "f4c9a24f2ae47356292f6c8b8ea62f0bdb2ccab3dcce6bfeca4defcc1c207fe0"
+  },
+  {
+    "path": "docs/HW2_PLAN.md",
+    "bytes": 6351,
+    "sha256": "5376577328149214b691f496ffbb71584286e10726cc76e2b22b440757f35321"
   },
   {
     "path": "docs/PREREGISTRATION.md",
