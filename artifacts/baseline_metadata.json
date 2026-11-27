@@ -1,0 +1,9 @@
+{
+  "model": "logistic_cabin",
+  "training_scope": "development only",
+  "data_sha256": "17336d553f49ebdf6ecb266d2b5d3746e5dd308445f7c7864141c4f28d2a88d0",
+  "config_sha256": "bd0587ad86e0b76b0ce17d3a429ffacd792e4fec792ac7154c2328a53f00db98",
+  "threshold": 0.5,
+  "trained_rows": 6968,
+  "holdout_evaluated": false
+}

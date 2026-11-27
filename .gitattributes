@@ -1,0 +1,9 @@
+# Keep large machine-generated evidence available but collapsed in GitHub reviews.
+data/splits/assignments.csv linguist-generated=true
+reports/predictions.csv linguist-generated=true
+reports/oof_primary.csv linguist-generated=true
+reports/submission.csv linguist-generated=true
+reports/run_metadata.json linguist-generated=true
+reports/report_fragments.json linguist-generated=true
+reports/error_explanations.json linguist-generated=true
+docs/dependency-wheel-manifest.json linguist-generated=true

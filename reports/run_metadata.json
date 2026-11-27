@@ -1,0 +1,843 @@
+{
+  "finished_at_utc": "2026-11-09T20:27:07.357603+00:00",
+  "python": "3.14.9",
+  "platform": "Linux-7.2.14-arch1-1-x86_64-with-glibc2.44",
+  "versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "PyYAML": "6.0.3",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.8.0"
+  },
+  "config": {
+    "project": "spaceship-titanic-hw1",
+    "schema_version": 1,
+    "data": {
+      "train": "data/raw/train.csv",
+      "expected_rows": 8693
+    },
+    "split": {
+      "holdout_fraction": 0.2,
+      "holdout_salt": "spaceship-final-v1",
+      "n_splits": 5,
+      "seeds": [
+        42,
+        17,
+        2026
+      ],
+      "primary_seed": 42
+    },
+    "models": [
+      "dummy_prior",
+      "logistic_core",
+      "logistic_cabin",
+      "logistic_missing",
+      "logistic_log_spend"
+    ],
+    "primary_model": "logistic_cabin",
+    "logistic": {
+      "C": 1.0,
+      "solver": "lbfgs",
+      "max_iter": 3000,
+      "tol": 0.0001,
+      "threshold": 0.5
+    },
+    "evaluation": {
+      "bootstrap_repetitions": 2000,
+      "bootstrap_seed": 9187,
+      "random_split_diagnostic": true,
+      "hypothesis_min_improved_folds": 4
+    },
+    "runtime": {
+      "blas_threads": 1
+    }
+  },
+  "config_sha256": "bd0587ad86e0b76b0ce17d3a429ffacd792e4fec792ac7154c2328a53f00db98",
+  "data_sha256": "17336d553f49ebdf6ecb266d2b5d3746e5dd308445f7c7864141c4f28d2a88d0",
+  "split_manifest_sha256": "027f00767b3231a01f646db3d71237ca66a5e56b8f4202706de7b92b4a9954f5",
+  "source_files_sha256": {
+    "src/spaceship_hw1/__init__.py": "16bdd44c7e6cee9a238fe88b6365f47c45904c290d2049a523e3dd124cf9a05a",
+    "src/spaceship_hw1/__main__.py": "7cbfb616da33c26ff7f3a5d777dd310f536502e683e2f9a0c0f530b6ac463102",
+    "src/spaceship_hw1/data.py": "063d6e26739da01e1a4fdb2e2da56cf33a970748ba6d78fba11a86398fc8e48b",
+    "src/spaceship_hw1/experiment.py": "06bc8f69865be1ad2f1e89380c5280a550854b6a9daf29d55697c2b25a197cda",
+    "src/spaceship_hw1/features.py": "e31a0b403800cdaf181231789d63e9433bdf231e7f2291b5d2154ba67496b2c6",
+    "src/spaceship_hw1/reporting.py": "c94e9d51545951a18ff98f93e636180dacb490660f18a10c1573d29c6fe5d7f2"
+  },
+  "total_seconds": 5.4658569769817404,
+  "runs": [
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 0,
+      "model": "dummy_prior",
+      "fit_and_predict_seconds": 0.056173598975874484,
+      "iterations": []
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 1,
+      "model": "dummy_prior",
+      "fit_and_predict_seconds": 0.03606650998699479,
+      "iterations": []
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 2,
+      "model": "dummy_prior",
+      "fit_and_predict_seconds": 0.03679020699928515,
+      "iterations": []
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 3,
+      "model": "dummy_prior",
+      "fit_and_predict_seconds": 0.03550089299096726,
+      "iterations": []
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 4,
+      "model": "dummy_prior",
+      "fit_and_predict_seconds": 0.035803620994556695,
+      "iterations": []
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 0,
+      "model": "logistic_core",
+      "fit_and_predict_seconds": 0.04407393600558862,
+      "iterations": [
+        20
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 1,
+      "model": "logistic_core",
+      "fit_and_predict_seconds": 0.045229383977130055,
+      "iterations": [
+        26
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 2,
+      "model": "logistic_core",
+      "fit_and_predict_seconds": 0.04482069498044439,
+      "iterations": [
+        23
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 3,
+      "model": "logistic_core",
+      "fit_and_predict_seconds": 0.04247728601330891,
+      "iterations": [
+        21
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 4,
+      "model": "logistic_core",
+      "fit_and_predict_seconds": 0.04372746800072491,
+      "iterations": [
+        18
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 0,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.05670243201893754,
+      "iterations": [
+        23
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 1,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.05960519699146971,
+      "iterations": [
+        23
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 2,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.05784821399720386,
+      "iterations": [
+        22
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 3,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.05629909900017083,
+      "iterations": [
+        21
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 4,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.0588087180221919,
+      "iterations": [
+        21
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 0,
+      "model": "logistic_missing",
+      "fit_and_predict_seconds": 0.06541077999281697,
+      "iterations": [
+        28
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 1,
+      "model": "logistic_missing",
+      "fit_and_predict_seconds": 0.06534605601336807,
+      "iterations": [
+        26
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 2,
+      "model": "logistic_missing",
+      "fit_and_predict_seconds": 0.07195882499217987,
+      "iterations": [
+        26
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 3,
+      "model": "logistic_missing",
+      "fit_and_predict_seconds": 0.07084223098354414,
+      "iterations": [
+        24
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 4,
+      "model": "logistic_missing",
+      "fit_and_predict_seconds": 0.050067517993738875,
+      "iterations": [
+        23
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 0,
+      "model": "logistic_log_spend",
+      "fit_and_predict_seconds": 0.051490760990418494,
+      "iterations": [
+        27
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 1,
+      "model": "logistic_log_spend",
+      "fit_and_predict_seconds": 0.051033812982495874,
+      "iterations": [
+        27
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 2,
+      "model": "logistic_log_spend",
+      "fit_and_predict_seconds": 0.052509507979266346,
+      "iterations": [
+        26
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 3,
+      "model": "logistic_log_spend",
+      "fit_and_predict_seconds": 0.05225227100891061,
+      "iterations": [
+        23
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 42,
+      "fold": 4,
+      "model": "logistic_log_spend",
+      "fit_and_predict_seconds": 0.054380603978643194,
+      "iterations": [
+        27
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 0,
+      "model": "dummy_prior",
+      "fit_and_predict_seconds": 0.028789745992980897,
+      "iterations": []
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 1,
+      "model": "dummy_prior",
+      "fit_and_predict_seconds": 0.028734377003274858,
+      "iterations": []
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 2,
+      "model": "dummy_prior",
+      "fit_and_predict_seconds": 0.028401145013049245,
+      "iterations": []
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 3,
+      "model": "dummy_prior",
+      "fit_and_predict_seconds": 0.02827369500300847,
+      "iterations": []
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 4,
+      "model": "dummy_prior",
+      "fit_and_predict_seconds": 0.029081478016451,
+      "iterations": []
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 0,
+      "model": "logistic_core",
+      "fit_and_predict_seconds": 0.03672333501162939,
+      "iterations": [
+        22
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 1,
+      "model": "logistic_core",
+      "fit_and_predict_seconds": 0.036895873985486105,
+      "iterations": [
+        25
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 2,
+      "model": "logistic_core",
+      "fit_and_predict_seconds": 0.03674730600323528,
+      "iterations": [
+        23
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 3,
+      "model": "logistic_core",
+      "fit_and_predict_seconds": 0.0361631810083054,
+      "iterations": [
+        24
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 4,
+      "model": "logistic_core",
+      "fit_and_predict_seconds": 0.034740713017527014,
+      "iterations": [
+        20
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 0,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.04915068199625239,
+      "iterations": [
+        27
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 1,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.047701853007311,
+      "iterations": [
+        21
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 2,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.047854561009444296,
+      "iterations": [
+        24
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 3,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.04823322899756022,
+      "iterations": [
+        23
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 4,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.04669885800103657,
+      "iterations": [
+        20
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 0,
+      "model": "logistic_missing",
+      "fit_and_predict_seconds": 0.05286357397562824,
+      "iterations": [
+        26
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 1,
+      "model": "logistic_missing",
+      "fit_and_predict_seconds": 0.053327333997003734,
+      "iterations": [
+        22
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 2,
+      "model": "logistic_missing",
+      "fit_and_predict_seconds": 0.05344381701434031,
+      "iterations": [
+        25
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 3,
+      "model": "logistic_missing",
+      "fit_and_predict_seconds": 0.05517171500832774,
+      "iterations": [
+        29
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 4,
+      "model": "logistic_missing",
+      "fit_and_predict_seconds": 0.0532954889931716,
+      "iterations": [
+        22
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 0,
+      "model": "logistic_log_spend",
+      "fit_and_predict_seconds": 0.05527601201902144,
+      "iterations": [
+        28
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 1,
+      "model": "logistic_log_spend",
+      "fit_and_predict_seconds": 0.055394112976500764,
+      "iterations": [
+        27
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 2,
+      "model": "logistic_log_spend",
+      "fit_and_predict_seconds": 0.054800765006802976,
+      "iterations": [
+        27
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 3,
+      "model": "logistic_log_spend",
+      "fit_and_predict_seconds": 0.05462106899358332,
+      "iterations": [
+        25
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 17,
+      "fold": 4,
+      "model": "logistic_log_spend",
+      "fit_and_predict_seconds": 0.053165945020737126,
+      "iterations": [
+        25
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 0,
+      "model": "dummy_prior",
+      "fit_and_predict_seconds": 0.02861881401622668,
+      "iterations": []
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 1,
+      "model": "dummy_prior",
+      "fit_and_predict_seconds": 0.028796358994441107,
+      "iterations": []
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 2,
+      "model": "dummy_prior",
+      "fit_and_predict_seconds": 0.029402999993180856,
+      "iterations": []
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 3,
+      "model": "dummy_prior",
+      "fit_and_predict_seconds": 0.028425116004655138,
+      "iterations": []
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 4,
+      "model": "dummy_prior",
+      "fit_and_predict_seconds": 0.028639903001021594,
+      "iterations": []
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 0,
+      "model": "logistic_core",
+      "fit_and_predict_seconds": 0.03524534500320442,
+      "iterations": [
+        19
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 1,
+      "model": "logistic_core",
+      "fit_and_predict_seconds": 0.03506589701282792,
+      "iterations": [
+        19
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 2,
+      "model": "logistic_core",
+      "fit_and_predict_seconds": 0.037649019999662414,
+      "iterations": [
+        24
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 3,
+      "model": "logistic_core",
+      "fit_and_predict_seconds": 0.036271735007176176,
+      "iterations": [
+        22
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 4,
+      "model": "logistic_core",
+      "fit_and_predict_seconds": 0.036969675013097,
+      "iterations": [
+        24
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 0,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.04731608598376624,
+      "iterations": [
+        21
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 1,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.04884452497935854,
+      "iterations": [
+        22
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 2,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.04775059799430892,
+      "iterations": [
+        22
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 3,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.049480479006888345,
+      "iterations": [
+        20
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 4,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.04908512198016979,
+      "iterations": [
+        24
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 0,
+      "model": "logistic_missing",
+      "fit_and_predict_seconds": 0.05447885999456048,
+      "iterations": [
+        25
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 1,
+      "model": "logistic_missing",
+      "fit_and_predict_seconds": 0.0540777709975373,
+      "iterations": [
+        25
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 2,
+      "model": "logistic_missing",
+      "fit_and_predict_seconds": 0.053097380994586274,
+      "iterations": [
+        23
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 3,
+      "model": "logistic_missing",
+      "fit_and_predict_seconds": 0.05359135600156151,
+      "iterations": [
+        26
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 4,
+      "model": "logistic_missing",
+      "fit_and_predict_seconds": 0.05308013499598019,
+      "iterations": [
+        22
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 0,
+      "model": "logistic_log_spend",
+      "fit_and_predict_seconds": 0.05530815600650385,
+      "iterations": [
+        25
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 1,
+      "model": "logistic_log_spend",
+      "fit_and_predict_seconds": 0.04781521001132205,
+      "iterations": [
+        27
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 2,
+      "model": "logistic_log_spend",
+      "fit_and_predict_seconds": 0.050348078017123044,
+      "iterations": [
+        27
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 3,
+      "model": "logistic_log_spend",
+      "fit_and_predict_seconds": 0.052069311001105234,
+      "iterations": [
+        28
+      ]
+    },
+    {
+      "protocol": "grouped",
+      "seed": 2026,
+      "fold": 4,
+      "model": "logistic_log_spend",
+      "fit_and_predict_seconds": 0.055982205987675115,
+      "iterations": [
+        35
+      ]
+    },
+    {
+      "protocol": "random_passenger",
+      "seed": 42,
+      "fold": 0,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.04817737897974439,
+      "iterations": [
+        26
+      ]
+    },
+    {
+      "protocol": "random_passenger",
+      "seed": 42,
+      "fold": 1,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.04840721300570294,
+      "iterations": [
+        23
+      ]
+    },
+    {
+      "protocol": "random_passenger",
+      "seed": 42,
+      "fold": 2,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.049005627020960674,
+      "iterations": [
+        27
+      ]
+    },
+    {
+      "protocol": "random_passenger",
+      "seed": 42,
+      "fold": 3,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.093100725003751,
+      "iterations": [
+        20
+      ]
+    },
+    {
+      "protocol": "random_passenger",
+      "seed": 42,
+      "fold": 4,
+      "model": "logistic_cabin",
+      "fit_and_predict_seconds": 0.04771140799857676,
+      "iterations": [
+        20
+      ]
+    }
+  ],
+  "final_holdout_evaluated": false
+}

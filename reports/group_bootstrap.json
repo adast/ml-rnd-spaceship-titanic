@@ -1,0 +1,63 @@
+{
+  "method": "Percentile resampling of development travel groups, paired for model differences",
+  "repetitions": 2000,
+  "seed": 9187,
+  "limitations": "Conditional on fitted OOF models. Does not retrain models or account fully for shared training sets across folds. These are development intervals, not final holdout evidence.",
+  "accuracy": {
+    "dummy_prior": {
+      "estimate": 0.5024397244546498,
+      "low": 0.48983862358325725,
+      "high": 0.5144304913175017
+    },
+    "logistic_core": {
+      "estimate": 0.7802812858783008,
+      "low": 0.7696212692790664,
+      "high": 0.7904444438853097
+    },
+    "logistic_cabin": {
+      "estimate": 0.7880309988518944,
+      "low": 0.777485441263127,
+      "high": 0.7981222133021656
+    },
+    "logistic_missing": {
+      "estimate": 0.7890355912743973,
+      "low": 0.7789461645612242,
+      "high": 0.7992008516607796
+    },
+    "logistic_log_spend": {
+      "estimate": 0.7794202066590127,
+      "low": 0.7690082759159277,
+      "high": 0.7894060793560066
+    }
+  },
+  "contrasts": {
+    "baseline_vs_dummy": {
+      "candidate": "logistic_cabin",
+      "reference": "dummy_prior",
+      "estimate": 0.2855912743972445,
+      "low": 0.2698299698468735,
+      "high": 0.30106059995899864
+    },
+    "cabin_features": {
+      "candidate": "logistic_cabin",
+      "reference": "logistic_core",
+      "estimate": 0.007749712973593571,
+      "low": 0.002402813516746505,
+      "high": 0.01290644088731889
+    },
+    "missing_indicators": {
+      "candidate": "logistic_missing",
+      "reference": "logistic_cabin",
+      "estimate": 0.0010045924225028703,
+      "low": -0.0013141991965764542,
+      "high": 0.0033536637720486045
+    },
+    "log_spending": {
+      "candidate": "logistic_log_spend",
+      "reference": "logistic_missing",
+      "estimate": -0.009615384615384616,
+      "low": -0.016307217633587476,
+      "high": -0.0027294732889750844
+    }
+  }
+}

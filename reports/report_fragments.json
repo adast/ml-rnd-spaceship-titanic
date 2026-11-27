@@ -1,0 +1,129 @@
+{
+  "results_table": "| Модель | Средняя accuracy ± SD | OOF F1 | OOF AUC | OOF log loss |\n| --- | --- | --- | --- | --- |\n| dummy_prior | 50.244% ± 0.030 п.п. | 0.6688 | 0.4997 | 0.6931 |\n| logistic_core | 78.028% ± 0.735 п.п. | 0.7831 | 0.8670 | 0.4539 |\n| logistic_cabin | 78.803% ± 0.778 п.п. | 0.7921 | 0.8756 | 0.4395 |\n| logistic_missing | 78.903% ± 0.909 п.п. | 0.7928 | 0.8758 | 0.4394 |\n| logistic_log_spend | 77.942% ± 0.651 п.п. | 0.7843 | 0.8546 | 0.4773 |",
+  "contrast_table": "| Изменение | Разность accuracy (п.п.) | Условный 95%-й интервал (п.п.) |\n| --- | --- | --- |\n| Палуба и борт каюты | +0.775 | [+0.240, +1.291] |\n| Индикаторы числовых пропусков | +0.100 | [-0.131, +0.335] |\n| Преобразование расходов log1p | -0.962 | [-1.631, -0.273] |",
+  "error_table": "| Правило отбора | PassengerId | Фолд | Истинный | Прогноз | P(Transported) | Пропуски |\n| --- | --- | --- | --- | --- | --- | --- |\n| Самая уверенная FP | 7219_02 | 0 | 0 | 1 | 0.9889 | 0 |\n| Самая уверенная FN | 1182_02 | 4 | 1 | 0 | 0.0067 | 0 |\n| Ошибка с наибольшим числом пропусков | 2822_02 | 4 | 0 | 1 | 0.6025 | 3 |",
+  "error_type_table": "| Тип ошибки | Число | Доля всех ошибок | Доля ошибок в истинном классе |\n| --- | --- | --- | --- |\n| Ложноположительная (FP) | 790 | 53.49% | 22.79% |\n| Ложноотрицательная (FN) | 687 | 46.51% | 19.62% |",
+  "typical_error_table": "| Тип ошибки | PassengerId | Фолд | Истинный | Прогноз | P(Transported) |\n| --- | --- | --- | --- | --- | --- |\n| Ложноположительная (FP) | 2964_01 | 1 | 0 | 1 | 0.6443 |\n| Ложноотрицательная (FN) | 6763_01 | 0 | 1 | 0 | 0.3254 |",
+  "slice_summary": [
+    {
+      "dimension": "HomePlanet",
+      "slice": "Earth",
+      "n": 3697,
+      "accuracy": 0.7054368406816337,
+      "positive_rate": 0.4184473897754936
+    },
+    {
+      "dimension": "HomePlanet",
+      "slice": "Europa",
+      "n": 1698,
+      "accuracy": 0.9110718492343934,
+      "positive_rate": 0.6637220259128387
+    },
+    {
+      "dimension": "HomePlanet",
+      "slice": "Mars",
+      "n": 1418,
+      "accuracy": 0.8575458392101551,
+      "positive_rate": 0.5275035260930888
+    },
+    {
+      "dimension": "HomePlanet",
+      "slice": "Missing",
+      "n": 155,
+      "accuracy": 0.7741935483870968,
+      "positive_rate": 0.5096774193548387
+    },
+    {
+      "dimension": "CryoSleep",
+      "slice": "False",
+      "n": 4345,
+      "accuracy": 0.7737629459148446,
+      "positive_rate": 0.32796317606444186
+    },
+    {
+      "dimension": "CryoSleep",
+      "slice": "Missing",
+      "n": 177,
+      "accuracy": 0.8022598870056498,
+      "positive_rate": 0.5028248587570622
+    },
+    {
+      "dimension": "CryoSleep",
+      "slice": "True",
+      "n": 2446,
+      "accuracy": 0.812346688470973,
+      "positive_rate": 0.812346688470973
+    },
+    {
+      "dimension": "Missing fields",
+      "slice": "0",
+      "n": 5433,
+      "accuracy": 0.7910914780047855,
+      "positive_rate": 0.5026688753911283
+    },
+    {
+      "dimension": "Missing fields",
+      "slice": "1",
+      "n": 1386,
+      "accuracy": 0.7741702741702742,
+      "positive_rate": 0.49927849927849927
+    },
+    {
+      "dimension": "Missing fields",
+      "slice": "2+",
+      "n": 149,
+      "accuracy": 0.8053691275167785,
+      "positive_rate": 0.5234899328859061
+    },
+    {
+      "dimension": "Travel group",
+      "slice": "Multiple passengers",
+      "n": 3108,
+      "accuracy": 0.8124195624195624,
+      "positive_rate": 0.5682110682110683
+    },
+    {
+      "dimension": "Travel group",
+      "slice": "Singleton",
+      "n": 3860,
+      "accuracy": 0.7683937823834197,
+      "positive_rate": 0.4494818652849741
+    }
+  ],
+  "development_rows": 6968,
+  "primary_errors": 1477,
+  "random_mean_accuracy": 0.7880310550497929,
+  "seed_means": [
+    {
+      "model": "dummy_prior",
+      "17": 0.5024397454,
+      "42": 0.5024397454,
+      "2026": 0.5024397454
+    },
+    {
+      "model": "logistic_core",
+      "17": 0.7798529438,
+      "42": 0.7802816089,
+      "2026": 0.7798516048
+    },
+    {
+      "model": "logistic_cabin",
+      "17": 0.7865980857,
+      "42": 0.7880303341,
+      "2026": 0.7867390859
+    },
+    {
+      "model": "logistic_missing",
+      "17": 0.7861663307,
+      "42": 0.7890346382,
+      "2026": 0.787599918
+    },
+    {
+      "model": "logistic_log_spend",
+      "17": 0.7771263573,
+      "42": 0.7794221157,
+      "2026": 0.7784136917
+    }
+  ],
+  "final_holdout_evaluated": false
+}

@@ -1,0 +1,105 @@
+{
+  "split": {
+    "data_sha256": "17336d553f49ebdf6ecb266d2b5d3746e5dd308445f7c7864141c4f28d2a88d0",
+    "split_config_sha256": "a006dc78aa846e8d65d3746da5ac3c8994774db33db6172173537a45b3f425ca",
+    "assignments_sha256": "86aa58002d66d4f834724efc0cd4e6e476b74c3ef7d312981ae9b500ee42d671",
+    "total_rows": 8693,
+    "development_rows": 6968,
+    "final_holdout_rows": 1725,
+    "development_groups": 4986,
+    "holdout_groups": 1231,
+    "holdout_evaluated": false
+  },
+  "target_counts_development": {
+    "0": 3467,
+    "1": 3501
+  },
+  "missing_development": {
+    "Age": 142,
+    "RoomService": 139,
+    "FoodCourt": 155,
+    "ShoppingMall": 163,
+    "Spa": 151,
+    "VRDeck": 144,
+    "HomePlanet": 155,
+    "CryoSleep": 177,
+    "Destination": 143,
+    "VIP": 160,
+    "Cabin": 164
+  },
+  "numeric_development": {
+    "Age": {
+      "count": 6826.0,
+      "mean": 28.8705,
+      "std": 14.5021,
+      "min": 0.0,
+      "25%": 19.0,
+      "50%": 27.0,
+      "75%": 38.0,
+      "max": 79.0
+    },
+    "RoomService": {
+      "count": 6829.0,
+      "mean": 227.6885,
+      "std": 686.0877,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 46.0,
+      "max": 14327.0
+    },
+    "FoodCourt": {
+      "count": 6813.0,
+      "mean": 452.5148,
+      "std": 1609.2437,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 76.0,
+      "max": 29813.0
+    },
+    "ShoppingMall": {
+      "count": 6805.0,
+      "mean": 174.3794,
+      "std": 610.9657,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 28.0,
+      "max": 23492.0
+    },
+    "Spa": {
+      "count": 6817.0,
+      "mean": 302.5928,
+      "std": 1126.6968,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 56.0,
+      "max": 22408.0
+    },
+    "VRDeck": {
+      "count": 6824.0,
+      "mean": 298.5733,
+      "std": 1130.0967,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 45.0,
+      "max": 24133.0
+    }
+  },
+  "duplicate_predictor_records_development": 28,
+  "group_size_counts_development": {
+    "1": 3860,
+    "2": 668,
+    "3": 271,
+    "4": 84,
+    "5": 44,
+    "6": 21,
+    "7": 27,
+    "8": 11
+  },
+  "holdout_labels_used_in_fit_or_evaluation": false,
+  "audit_scope": "Only development labels and features are analyzed. Whole-data counts and hashes record provenance, not holdout target analysis."
+}
