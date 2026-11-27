@@ -122,6 +122,31 @@ def child_age_pairs(frame):
     )
 
 
+def spa_response(model, training, passenger):
+    """Подставить вместо пропуска суммы за Spa из обучающей выборки."""
+    if len(passenger) != 1 or passenger["Spa"].notna().any():
+        raise ValueError("Для проверки нужен один пассажир с пропуском Spa")
+    case = passenger.iloc[0]
+    deck = case.Cabin.split("/")[0]
+    comparable = (
+        training.HomePlanet.eq(case.HomePlanet)
+        & training.Cabin.str.startswith(f"{deck}/", na=False)
+        & training.CryoSleep.eq(case.CryoSleep)
+        & training[SPENDING].notna().all(axis=1)
+    )
+    amounts = training.loc[comparable, "Spa"].value_counts().sort_index()
+    if amounts.empty:
+        raise ValueError("В обучающей выборке нет сопоставимых счетов Spa")
+    replacements = passenger.loc[passenger.index.repeat(len(amounts))].copy()
+    replacements["Spa"] = amounts.index.to_numpy()
+    return pd.DataFrame({
+        "PassengerId": case.PassengerId, "spa_amount": amounts.index,
+        "n_donors": amounts.to_numpy(),
+        "probability": model.predict_proba(replacements)[:, 1],
+        "missing_probability": model.predict_proba(passenger)[0, 1],
+    })
+
+
 def run(dev, split, reference, output):
     """Сравнить группы пассажиров и подобрать примеры ошибок."""
     frame = dev.set_index("PassengerId").join(
@@ -181,3 +206,5 @@ def run(dev, split, reference, output):
         pd.DataFrame(rows).to_csv(
             output / f"{name}.csv", index=False, float_format="%.12g"
         )
+    return next(row["PassengerId"] for row in examples
+                if row["pattern"] == "awake_missing_bills")
