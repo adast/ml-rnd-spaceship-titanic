@@ -7,3 +7,4 @@ reports/run_metadata.json linguist-generated=true
 reports/report_fragments.json linguist-generated=true
 reports/error_explanations.json linguist-generated=true
 docs/dependency-wheel-manifest.json linguist-generated=true
+reports/hw2/metadata.json linguist-generated=true
