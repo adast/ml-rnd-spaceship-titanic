@@ -1,0 +1,7 @@
+PassengerId,Age,RoomService,FoodCourt,ShoppingMall,Spa,VRDeck,HomePlanet,CryoSleep,Destination,VIP,Cabin,group,fold,y_true,probability
+8050_02,1,0,0,0,0,0,Earth,True,TRAPPIST-1e,False,,8050,0,1,0.54728312344
+9081_03,1,0,0,0,0,0,Earth,True,TRAPPIST-1e,False,,9081,1,0,0.621945737394
+8383_02,3,0,0,0,0,0,Earth,True,TRAPPIST-1e,False,G/1368/P,8383,4,0,0.533114792308
+8383_04,3,0,0,0,0,0,Earth,True,TRAPPIST-1e,False,G/1368/P,8383,4,1,0.533114792308
+0301_01,16,0,0,0,0,0,Earth,True,TRAPPIST-1e,False,,0301,0,0,0.571177163638
+7890_03,16,0,0,0,0,0,Earth,True,TRAPPIST-1e,False,,7890,4,1,0.530088537712
